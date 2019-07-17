@@ -15,8 +15,7 @@ words and finding similarity.
 
 ### Running Locally
 
-python tasks/methodology/word-embeddings/word_embeddings.py <word1> <word2>
-<topn>
+python tasks/methodology/word-embeddings/word_embeddings.py **word1** **word2** **topn**
 
 where:
 word1 - First word used to find similar words within the documents.
