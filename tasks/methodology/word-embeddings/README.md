@@ -28,17 +28,17 @@ Example:
 python tasks/methodology/word-embeddings/word_embeddings.py trump mayor 10
 
 ### Output
-ML Flow shall be used to log input parameters:
-word1
-word2
-topn
+ML Flow shall be used to log input parameters.
+* word1
+* word2
+* topn
 
-ML Flow shall be used to record similar words as Tags
-word1_most_similar
-word2_most_similar
+ML Flow shall be used to record similar words as tags.
+* word1_most_similar
+* word2_most_similar
 
-ML Flow shall be used to log metrics
-vocabulary_size
-similarity_score between word1 and word2
+ML Flow shall be used to log metrics.
+* vocabulary_size
+* similarity_score between word1 and word2
 
 
