@@ -14,18 +14,17 @@ words and finding similarity.
 [gensim](https://radimrehurek.com/gensim/) package is used for Word2Vec functionality.
 
 ### Running Locally
-
-python tasks/methodology/word-embeddings/word_embeddings.py <word1> <word2>
-<topn>
+cd tasks/methodology/word-embeddings
+mlflow run . -P word1=_word1_ -P word2=_word2_ -P topn=_topn_
 
 where:
-word1 - First word used to find similar words within the documents.
-word2 - Second word used to find similar words within the documents.
+_word1_ - First word used to find similar words within the documents.
+_word2_ - Second word used to find similar words within the documents.
 Note : word1 is also compared with word2 to find similarity between them.
-topn - Number of similar words to be listed.
+_topn_ - Number of similar words to be listed.
 
 Example:
-python tasks/methodology/word-embeddings/word_embeddings.py trump mayor 10
+mlflow run . -P word1=fbi -P word2=nypd -P topn=10
 
 ### Output
 ML Flow shall be used to log input parameters:
@@ -33,12 +32,10 @@ word1
 word2
 topn
 
-ML Flow shall be used to record similar words as Tags
-word1_most_similar
-word2_most_similar
-
 ML Flow shall be used to log metrics
 vocabulary_size
 similarity_score between word1 and word2
 
-
+ML Flow shall be print records similar words on console
+word1_most_similar
+word2_most_similar

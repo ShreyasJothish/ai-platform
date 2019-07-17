@@ -9,4 +9,4 @@ entry_points:
       word2: string
       topn: {type: integer, default: 10}
 
-    command: "python word_embedding.py {word1} {word2} {topn}"
+    command: "python word_embeddings.py {word1} {word2} {topn}"

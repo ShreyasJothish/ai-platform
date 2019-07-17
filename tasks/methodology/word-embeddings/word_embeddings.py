@@ -65,10 +65,10 @@ if __name__ == "__main__":
 
         # Explore the results like finding most similar words and similarity
         word1_most_similar = w2v.wv.most_similar(word1, topn=topn)
-        mlflow.set_tag("word1_most_similar", word1_most_similar)
+        print(word1_most_similar)
 
         word2_most_similar = w2v.wv.most_similar(word2, topn=topn)
-        mlflow.set_tag("word2_most_similar", word2_most_similar)
+        print(word2_most_similar)
 
         similarity_score = w2v.wv.similarity(word1, word2)
         mlflow.log_metric("similarity_score", similarity_score)
