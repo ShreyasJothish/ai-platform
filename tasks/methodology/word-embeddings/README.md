@@ -20,7 +20,7 @@ mlflow run . -P word1=_word1_ -P word2=_word2_ -P topn=_topn_
 where:
 _word1_ - First word used to find similar words within the documents.
 _word2_ - Second word used to find similar words within the documents.
-Note : word1 is also compared with word2 to find similarity between them.
+> Note : word1 is also compared with word2 to find similarity between them.
 _topn_ - Number of similar words to be listed.
 
 Example:
@@ -28,13 +28,13 @@ mlflow run . -P word1=fbi -P word2=nypd -P topn=10
 
 ### Output
 ML Flow shall be used to log input parameters:
-word1
-word2
-topn
+* word1
+* word2
+* topn
 
-ML Flow shall be used to log metrics
-vocabulary_size
-similarity_score between word1 and word2
+ML Flow shall be used to log metrics.
+* vocabulary_size
+* similarity_score between word1 and word2
 
 ML Flow shall be print records similar words on console
 word1_most_similar
