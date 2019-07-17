@@ -18,10 +18,10 @@ words and finding similarity.
 python tasks/methodology/word-embeddings/word_embeddings.py **word1** **word2** **topn**
 
 where:
-word1 - First word used to find similar words within the documents.
-word2 - Second word used to find similar words within the documents.
-Note : word1 is also compared with word2 to find similarity between them.
-topn - Number of similar words to be listed.
+* word1 - First word used to find similar words within the documents.
+* word2 - Second word used to find similar words within the documents.
+> Note : word1 is also compared with word2 to find similarity between them.
+* topn - Number of similar words to be listed.
 
 Example:
 python tasks/methodology/word-embeddings/word_embeddings.py trump mayor 10
